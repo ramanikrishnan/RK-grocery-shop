@@ -1,0 +1,56 @@
+/* Parent container where multiple ProductItem components are displayed */
+.product-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of items if needed */
+    gap: 20px; /* Space between product items */
+  }
+  
+  .product-item {
+    display: flex;
+    flex-direction: row; /* Align children in a row */
+    align-items: center; /* Center items vertically */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width for consistent layout */
+  }
+  
+  .product-image-container {
+    flex: 0 0 auto; /* Prevent resizing */
+    margin-right: 20px; /* Space between image and text */
+  }
+  
+  .product-image {
+    width: 100px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px;
+  }
+  
+  .product-item div {
+    flex: 1; /* Take up remaining space */
+  }
+  
+  h3 {
+    margin: 0 0 5px 0;
+  }
+  
+  p {
+    margin: 0 0 10px 0;
+  }
+  
+  button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
